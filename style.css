@@ -110,6 +110,13 @@ nav a:active {
     top: 40%;
 }
 
+@media screen and (max-width: 450px) {
+    .new {
+        top: 20%;
+    }
+}
+
+
 .item:hover .old {
     opacity: 0;
 }
