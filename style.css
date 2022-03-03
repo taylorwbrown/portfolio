@@ -60,10 +60,64 @@ nav a:active {
     color: #000000;
 }
 
-#Me {
+.item {
+    height: 30em;
     width: 100%;
-    display: block;
+    display: flex;
     background-image: url("./img/meImg.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #202020;
+    z-index: 1;
+    position: relative;
+    margin: 1em auto;
 }
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(32,32,32, 0.5);
+    z-index: 2;
+    text-align: center;
+    align-items: center;
+}
+
+.overlay span{
+    position: relative;
+    display: flex;
+    font-size: 1.5em;
+    margin: auto;
+    
+}
+
+.new {
+    opacity: 0;
+    position: absolute;
+}
+
+.old {
+    position: absolute;
+}
+
+.old, .new {
+    transition: opacity 0.5s linear;
+}
+
+.item:hover .old {
+    opacity: 0;
+}
+.item:hover .new {
+    opacity: 1;
+}
+
+.item:active .old {
+    opacity: 0;
+}
+.item:active .new {
+    opacity: 1;
+}
+
+
+
