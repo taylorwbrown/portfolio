@@ -59,3 +59,11 @@ nav a:active {
     background-color: #ffffff;
     color: #000000;
 }
+
+#Me {
+    width: 100%;
+    display: block;
+    background-image: url("./img/meImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
