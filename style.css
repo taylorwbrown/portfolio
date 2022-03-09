@@ -68,10 +68,21 @@ nav a:active {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #202020;
+    background-size: 640px 640px;
     z-index: 1;
     position: relative;
     margin: 2em auto;
     transition: all 1s;
+}
+
+#me {
+    background-image: url("./img/meImg.jpg");
+}
+#experience {
+    background-image: url("./img/belay.jpg");
+}
+#skills {
+    background-image: url("./img/29115.jpg");
 }
 
 .item:hover {
